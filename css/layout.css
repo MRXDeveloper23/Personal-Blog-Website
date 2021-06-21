@@ -5,17 +5,20 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   line-height: 1.6;
   background-color: #fffaf0;
   color: #222;
 }
 
-/* Typography */
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Playfair Display', serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
   letter-spacing: 0.05em;
   margin: 0.2em 0;
   text-align: center;
@@ -46,7 +49,7 @@ h6 {
 }
 
 p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-align: left;
   font-size: 1em;
   margin: 1em 0 0;
@@ -71,13 +74,13 @@ a:hover {
 }
 
 strong {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   letter-spacing: 0.05em;
 }
 
 em {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: 500i;
   letter-spacing: 0.05em;
 }
@@ -95,7 +98,7 @@ figcaption {
 }
 
 q {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: 500i;
   letter-spacing: 0.05em;
 }
@@ -120,7 +123,7 @@ blockquote:first-letter {
 .btn {
   width: 150px;
   padding: 10px 0;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 1.1em;
   letter-spacing: 0.1em;
   text-align: center;

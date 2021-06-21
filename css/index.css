@@ -2,21 +2,19 @@
 @import "nav.css";
 @import "footer.css";
 
-/* grid container */
-
 #grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: minmax(30px, auto);
   gap: 6px;
   grid-template-areas:
-  "nav nav"
-  "top-post top-post"
-  "newsletter newsletter"
-  "post-1 post-2"
-  "post-3 post-4"
-  "post-5 post-4"
-  "ft ft";
+    "nav nav"
+    "top-post top-post"
+    "newsletter newsletter"
+    "post-1 post-2"
+    "post-3 post-4"
+    "post-5 post-4"
+    "ft ft";
 }
 
 @media (min-width: 600px) {
@@ -24,24 +22,24 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 60px auto auto auto 30px;
+    grid-template-rows: 60px auto auto auto auto 30px;
     gap: 6px;
     grid-template-areas:
-    "nav nav nav nav"
-    "top-post top-post post-1 post-1"
-    "top-post top-post post-2 post-2"
-    "post-3 newsletter newsletter post-4"
-    "ft ft ft ft";
+      "nav nav nav nav"
+      "top-post top-post post-1 post-1"
+      "top-post top-post post-2 post-2"
+      "post-3 post-3 post-4 post-4"
+      "newsletter newsletter newsletter newsletter"
+      "ft ft ft ft";
   }
 }
-
-/* content */
 
 #top-post {
   grid-area: top-post;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/neon-shop-ad.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("https://voicesoncentralasia.org/wp-content/uploads/2018/06/city21.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -63,7 +61,8 @@
 
 #post-1 {
   grid-area: post-1;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/backstreet.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("https://www.journalofnomads.com/wp-content/uploads/2019/10/Top-things-to-see-and-do-in-Bukhara-Uzbekistan.jpg");
   width: 100%;
   height: 100%;
   background-position: center;
@@ -75,7 +74,8 @@
 
 #post-2 {
   grid-area: post-2;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/cherry-blossom.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("https://diplomatmagazine.eu/wp-content/uploads/photo-1-1.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -85,7 +85,8 @@
 
 #post-3 {
   grid-area: post-3;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/tokyo-tower.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("https://www.thetravelmagazine.net/wp-content/uploads/Khiva.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -95,7 +96,8 @@
 
 #post-4 {
   grid-area: post-4;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/shopping-area.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfdlAQrcEEESAwpRXKUrI-l7pTtpoZ4rJWFY6a116NJn88JOMfJuvlHg1m67HS2RmeoNg&usqp=CAU");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -105,7 +107,8 @@
 
 #post-5 {
   grid-area: post-5;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/tokyo-at-night.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("https://upload.wikimedia.org/wikipedia/commons/1/16/Tashkent_City_Park_at_night_2019.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -118,8 +121,6 @@
     display: none;
   }
 }
-
-/* tile styling */
 
 .text-gradient {
   background-color: rgba(0, 0, 0, 0.5);
@@ -142,7 +143,7 @@
 }
 
 .link:hover {
-  color: #F6AA1C;
+  color: #f6aa1c;
 }
 
 .post-info {
@@ -164,8 +165,6 @@
   }
 }
 
-/* newsletter */
-
 #newsletter {
   grid-area: newsletter;
   display: flex;
@@ -183,7 +182,8 @@
   width: 30%;
 }
 
-input[type=text], input[type=submit] {
+input[type="text"],
+input[type="submit"] {
   text-align: center;
   width: 100%;
   padding: 12px;
@@ -192,7 +192,7 @@ input[type=text], input[type=submit] {
   box-sizing: border-box;
 }
 
-input[type=submit] {
+input[type="submit"] {
   font-size: 1.1em;
   letter-spacing: 0.1em;
   text-align: center;
@@ -206,7 +206,7 @@ input[type=submit] {
   border: none;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: transparent;
   border: 2px solid #e54b4b;
   color: #e54b4b;
@@ -226,7 +226,7 @@ input[type=submit]:hover {
     width: 40%;
   }
 
-  input[type=submit] {
+  input[type="submit"] {
     font-size: 0.9em;
   }
 }

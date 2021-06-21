@@ -1,8 +1,6 @@
-/* navigation */
-
 nav {
   grid-area: nav;
-  background-color: #F6AA1C;
+  background-color: #fda809;
   display: flex;
   flex-flow: row wrap;
   width: 100%;
@@ -12,7 +10,7 @@ nav {
 
 #nav-flex-title {
   display: flex;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 1.5em;
   letter-spacing: 0.05em;
   color: #222;

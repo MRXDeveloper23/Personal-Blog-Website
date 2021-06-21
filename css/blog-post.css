@@ -2,24 +2,20 @@
 @import "nav.css";
 @import "footer.css";
 
-/* additional text styling */
-
 p a:hover {
   text-decoration: underline;
 }
-
-/* grid container */
 
 #grid-container {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 100px 300px auto auto 30px;
   grid-template-areas:
-  "nav"
-  "hd"
-  "post"
-  "post-suggestions"
-  "ft";
+    "nav"
+    "hd"
+    "post"
+    "post-suggestions"
+    "ft";
 }
 
 @media (min-width: 600px) {
@@ -29,19 +25,17 @@ p a:hover {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 60px auto 30px;
     grid-template-areas:
-    "nav nav"
-    "hd post"
-    "ft ft";
+      "nav nav"
+      "hd post"
+      "ft ft";
   }
 }
-
-/* content */
 
 header {
   grid-area: hd;
   width: 100%;
   height: auto;
-  background-image: url("../img/neon-shop-ad.jpg");
+  background-image: url("https://i.ytimg.com/vi/MLD3EFFCwDU/maxresdefault.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -67,14 +61,12 @@ footer {
   text-align: center;
 }
 
-/* author info */
-
 .meta {
   text-align: center;
 }
 
 .post-info {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   letter-spacing: 0.05em;
   margin: 0.2em 0;
   font-size: 1.2em;
@@ -134,23 +126,17 @@ footer {
   }
 }
 
-/* blog image */
-
 .blog-article img {
   width: 100%;
   height: auto;
   object-fit: contain;
 }
 
-/* social links */
-
 .social-sharing {
   display: flex;
   justify-content: flex-end;
   align-items: baseline;
 }
-
-/* post suggestion */
 
 hr {
   border-top: 1px solid #e54b4b;
